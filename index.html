@@ -7,13 +7,7 @@
 </head>
 
 <body>
-	<iframe
-    src="https://player.twitch.tv/?channel=syctis&parent=https://syctis.github.io"
-    height="360"
-    width="640"
-    allowfullscreen="false"
-	autoplay="true">
-</iframe>
+	<div id="twitch-embed"></div>
 	<style>
 body {
 	background-color:#090A0D;
@@ -25,3 +19,14 @@ body {
 </style>
 </body>
 </html>
+<!-- Load the Twitch embed script -->
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<script type="text/javascript">
+  new Twitch.Player("twitch-embed", {
+    channel: "syctis",
+    parent: ["github.com, syctis.github.io, github.io"],
+	width: 640,
+    height: 360
+  });
+
+</script>
