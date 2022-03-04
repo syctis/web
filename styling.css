@@ -6,3 +6,38 @@ top: 50%;
 left: 50%;
 
 transform: translate(-50%, -50%);}
+
+
+body {
+  background-color: black;
+  color: #636363;
+  font-family: courier;
+}
+
+.root {
+  color: #008309;
+}
+
+.center{
+    position:absolute;
+    width:780px;
+    height:650px;
+    left:50%;
+    top:50%;
+    margin-left:-390px;
+    margin-top:-325px;
+}
+
+div.gallery {
+  margin: 25px;
+  float: left;
+  width: 260px;
+clear: none;
+box-shadow: 0.2em 0.2em 0.2em  white;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
