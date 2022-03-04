@@ -11,7 +11,7 @@ transform: translate(-50%, -50%);}
 body {
   background-color: black;
   color: #636363;
-  font-family: courier;
+font-family: 'Courier Prime', monospace;
 }
 
 .root {
