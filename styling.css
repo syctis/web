@@ -12,6 +12,11 @@ top: 50%;
 left: 50%;
 transform: translate(5%, -50%);}
 
+	.contentframe3{position:absolute;
+top: 50%;
+left: 50%;
+text-align: center;}
+
 body {
   background-color: black;
   color: #636363;

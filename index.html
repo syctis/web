@@ -1,45 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>syctis</title>
-<link href="styling.css" rel="stylesheet" type="text/css" media="screen">
-<style>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>syctis</title>
+    <link href="styling.css" rel="stylesheet" type="text/css" media="screen">
+    <style>
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
-</style>
-</head>
+</style> </head>
+  <body>
+    <header>
+      <div class="root"> <a href="index.html" style="color: #008309; font-size: 18px">"[root@syctis]</a>
+      </div>
+      <li class="submenu"> <a href="portfolio.html" style="color: white">Thumbnails</a>
+      </li>
+      <li class="submenu"> <a href="https://store.streamelements.com/syctis" target="_blank"
 
-<body>
-<header>
-	<div class="root">
-    <a href="index.html" style="color: #008309; font-size: 18px" >[root@syctis]</a>
-	</div>
-	<li class="submenu">
-		<a href="portfolio.html" style="color: white">Thumbnails</a>
-	</li>
-	<li class="submenu">
-		<a href="https://store.streamelements.com/syctis" target="_blank" style="color: white">Merch Shop</a>
-	</li>
-</header>
-	
-	<div class="contentframe">
-	  <div id="twitch-embed"></div> </div>
-	
-<div class="contentframe2">
-<iframe width="640" height="360" src="https://www.youtube.com/embed?listType=playlist&list=UULFL8DnZiLUCxvNsk3abqE3zQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          style="color: white">Merch Shop</a> </li>
+    </header>
+    <div class="contentframe" hidden="">
+      <div id="twitch-embed"></div>
+    </div>
+    <div style="position: relative" align="center"> <iframe src="https://www.youtube.com/embed?listType=playlist&amp;list=UULFL8DnZiLUCxvNsk3abqE3zQ"
 
-<!-- Load the Twitch embed script -->
-<script src= "https://embed.twitch.tv/embed/v1.js"></script>
-<script type="text/javascript">
+        title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
+        allowfullscreen="" height="360" frameborder="0" width="640"></iframe></div>
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <script type="text/javascript">
       new Twitch.Embed("twitch-embed", {
         width: 640,
         height: 360,
         channel: "syctis",
 		layout: "video",
       });
-</script>
-	
-<style>
+</script> <style>
 	body {
 	background-color:#090A0D;
 	background-image: url('https://i.imgur.com/mSCJEzQ.gif');
@@ -48,5 +43,5 @@
   	background-position: 50% 50%;
 	}
 </style>
-</body>
+  </body>
 </html>
