@@ -8,6 +8,12 @@
 	    <style>
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 	</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/10.3.0/firebase-app.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js"></script>
+<script src="your-game-script.js"></script>
 	<script src="script.js"></script>
     <title>Aim Trainer</title>
 </head>
@@ -32,21 +38,42 @@
     </select>
 </div>
 
+
+  <div class="leaderboard-container">
+    <h2>Leaderboard</h2>
+    <table>
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody id="leaderboardBody">
+      <!-- Leaderboard rows will be added here -->
+    </tbody>
+  </table>
+</div>
     <div class="aim-container">
         <div class="target" id="target"></div>
     </div>
+
 	
 	<div class="preset-settings" id="presetSettings"></div>
 	
     <div id="timer"></div>
 	
-<div class="popup" id="popup">
-    <div class="popup-content">
-        <h2>Congratulations!</h2>
-        <p>You hit all targets in <span id="popupTime"></span> seconds.</p>
-        <button id="closePopup">Close</button>
-    </div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span id="closePopup" class="close">&times;</span>
+    <h2>Time's Up!</h2>
+    <p>Your time: <span id="popupTime">0.00</span> seconds</p>
+    <h3>Submit Your Score</h3>
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <button id="submitScoreButton">Submit Score</button>
+  </div>
 </div>
+
 	
 	<style>
 	body {
@@ -57,7 +84,29 @@
   	background-position: 50% 50%;
 	}
 </style>
-	
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCOkD74tX5w-kcgrmUjc65TIpj_BwUZeyY",
+    authDomain: "aimer-3cffe.firebaseapp.com",
+    projectId: "aimer-3cffe",
+    storageBucket: "aimer-3cffe.appspot.com",
+    messagingSenderId: "128270248676",
+    appId: "1:128270248676:web:c156f2ffc2c932d1201af1",
+    measurementId: "G-ZLLBD3ZY67"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 </body>
 </html>
