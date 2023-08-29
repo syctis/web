@@ -8,6 +8,7 @@
 	    <style>
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 	</style>
+	<script src="script.js"></script>
     <title>Aim Trainer</title>
 </head>
 <body>
@@ -21,16 +22,32 @@
 <li class="submenu"> <a href="aim.html" style="color: white">Aim Trainer</a>
     </li>
     </header>
+	
 <div class="settings">
-      <label for="targetSize">Target Size:</label>
-      <input type="number" id="targetSize" value="50">
-      <label for="containerSize">Container Size:</label>
-      <input type="number" id="containerSize" value="400">
+    <label for="preset">Select Settings:</label>
+    <select id="preset">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
 </div>
-<div class="aim-container">
-  <div class="target" id="target"></div>
+
+    <div class="aim-container">
+        <div class="target" id="target"></div>
+    </div>
+	
+	<div class="preset-settings" id="presetSettings"></div>
+	
+    <div id="timer"></div>
+	
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h2>Congratulations!</h2>
+        <p>You hit all targets in <span id="popupTime"></span> seconds.</p>
+        <button id="closePopup">Close</button>
+    </div>
 </div>
-    <script src="script.js"></script>
+	
 	<style>
 	body {
 	background-color:#090A0D;
@@ -40,5 +57,7 @@
   	background-position: 50% 50%;
 	}
 </style>
+	
+
 </body>
 </html>
