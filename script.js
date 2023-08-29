@@ -136,4 +136,5 @@ document.addEventListener('DOMContentLoaded', () => {
         target.style.left = `${randomX}px`;
         target.style.top = `${randomY}px`;
     }
+
 });

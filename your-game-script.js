@@ -1,0 +1,1 @@
+console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);    try {

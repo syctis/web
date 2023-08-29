@@ -60,3 +60,16 @@ div.gallery img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
+/* Example CSS for layout */
+.game-container {
+  display: flex;
+}
+
+.leaderboard-container {
+    position: absolute;
+    top: 33%;
+    left: 10%;
+	padding: 20px;
+  border: 1px solid #ccc;
+}
+
