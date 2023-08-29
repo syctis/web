@@ -1,1 +1,1 @@
-console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);    try {
+console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);console.log(popupTime.textContent);    try {document.addEventListener('DOMContentLoaded', () => {document.addEventListener('DOMContentLoaded', () => {
